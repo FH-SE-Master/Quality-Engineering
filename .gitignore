@@ -57,6 +57,7 @@ Temporary Items
 *.log
 *.obj
 _minted*
+~*
 
 # intellij
 .idea
