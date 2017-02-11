@@ -3,18 +3,56 @@
 In diesem Abschnitt werden die Produktqualität und die Qualität im Einsatz für die Internationalisierung diskutiert.
 \newline
 \newline
-\begin{tabularx}{\textwidth}{ X | X }
-	\hline 
-	\multicolumn{2}{c}{\vspace{2pt}\textbf{Produktqualitätsmerkmale nach ISO 25010}} \\ \hline
-	Benutzerfreundlichkeit    & Erlernbarkeit             \\ 
-	Zuverlässlichkeit         & Verfügbarkeit             \\ \hline
-\end{tabularx}
-\ \newline
+Als Beispiel für die Produktqualität werden Qualitätsmerkmale im Bezug auf die XML-Verarbeitung, die über die Anwendung \emph{clever\textbf{interface}} der Softwarelösung \emph{clevercure} erfolgen, definiert.
 \newline
-\begin{tabularx}{\textwidth}{ X | X }
-	\hline
-	\multicolumn{2}{c}{\vspace{2pt}\textbf{Qualität im Einsatz nach ISO 25010}} \\ \hline
-	Zufriedenheit         & Nützlichkeit                 \\ 
-	Risikofreiheit         & Minderung von Wirtschaftsrisiken                 \\ \hline
+\newline
+\bgroup
+\def\arraystretch{1.5}%  1 is the default, change whatever you need
+\begin{tabularx}{\textwidth}{ p{70pt} | X | X | X }
+	\multicolumn{2}{c}{\textbf{Produktqualität nach ISO 25010}} \\ \hline
+	& \textbf{Beschreibung} & \textbf{Maß} & \textbf{Messvorgang} \\ \hline
+	& \textbf{Priorität} & \textbf{Maßeinheit} & \textbf{Schwellwert} \\ \hline
+	\textbf{Funktionalität} & \multicolumn{3}{p{300pt}}{XML-Datenimport eines standardisierten openTRANS-Dokuments} \\ \hline
+	\textbf{Merkmal} & \multicolumn{3}{X}{Leistungseffizienz} \\ \hline
+	\textbf{Definition} & \multicolumn{3}{p{380pt}}{Zeitdauer der Verarbeitung eines standardisierten XML-Dokuments} \\ \hline
+	\textbf{Submerkmal} & \multicolumn{3}{X}{Zeitverhalten} \\ \hline 
+	\textbf{Attribut} & Verarbeitungsdauer & Transaktionsbeginn bis Transaktionsende & Zeitmessung  \\ \hline
+	               & Hoch               & Zeit in Minuten & $<= 5$ Mintuen  \\ 
+    \hline 
+    \hline 
+	& \textbf{Beschreibung} & \textbf{Maß} & \textbf{Messvorgang} \\ \hline
+	& \textbf{Priorität} & \textbf{Maßeinheit} & \textbf{Schwellwert} \\ \hline
+	\textbf{Funktionalität} & \multicolumn{3}{p{300pt}}{Konvertierung zwischen den beiden openTRANS Versionen 1 und 2} \\ \hline
+	\textbf{Merkmal} & \multicolumn{3}{X}{Kompatibilität} \\ \hline
+	\textbf{Definition} & \multicolumn{3}{p{380pt}}{Konvertierung eines standardisierten openTrans-Dokuments in Version 1 zu einem openTRANS-Dokument in Version 2} \\ \hline
+	\textbf{Submerkmal} & \multicolumn{3}{X}{Interoperabilität} \\ \hline 
+	\textbf{Attribut} & Fehlererkennung & Von Start bis Fertigstellung der Konvertierung  & Fehleranzahl  \\ \hline
+	& Hoch               & Anzahl als Integer & $= 0$  \\ \hline
 \end{tabularx}
+\egroup
 \ \newline
+\newpage
+\bgroup
+\def\arraystretch{1.5}%  1 is the default, change whatever you need
+\begin{tabularx}{\textwidth}{ p{70pt} | X | X | X }
+	\multicolumn{2}{c}{\textbf{Qualität im Einsatz nach ISO 25010}} \\ \hline
+	& \textbf{Beschreibung} & \textbf{Maß} & \textbf{Messvorgang} \\ \hline
+	& \textbf{Priorität} & \textbf{Maßeinheit} & \textbf{Schwellwert} \\ \hline
+	\textbf{Funktionalität} & \multicolumn{3}{p{300pt}}{XML-Datenimport eines standardisierten openTRANS-Dokuments} \\ \hline
+	\textbf{Merkmal} & \multicolumn{3}{X}{Leistungseffizienz} \\ \hline
+	\textbf{Definition} & \multicolumn{3}{p{380pt}}{Zeitdauer der Verarbeitung eines standardisierten XML-Dokuments über die Anwendung \emph{clever\textbf{interface}}} \\ \hline
+	\textbf{Submerkmal} & \multicolumn{3}{X}{Zeitverhalten} \\ \hline 
+	\textbf{Attribut} & Verarbeitungsdauer & Transaktionsbeginn bis Transaktionsende & Zeitmessung  \\ \hline
+	& Hoch               & Zeit in Minuten & $<= 5$ Mintuen  \\ 
+	\hline 
+	\hline 
+	& \textbf{Beschreibung} & \textbf{Maß} & \textbf{Messvorgang} \\ \hline
+	& \textbf{Priorität} & \textbf{Maßeinheit} & \textbf{Schwellwert} \\ \hline
+	\textbf{Funktionalität} & \multicolumn{3}{p{300pt}}{Konvertierung zwischen den beiden openTRANS Versionen 1 und 2} \\ \hline
+	\textbf{Merkmal} & \multicolumn{3}{X}{Kompatibilität} \\ \hline
+	\textbf{Definition} & \multicolumn{3}{p{380pt}}{Konvertierung eines standardisierten openTrans-Dokuments in Version 1 zu einem openTRANS-Dokument in Version 2} \\ \hline
+	\textbf{Submerkmal} & \multicolumn{3}{X}{Interoperabilität} \\ \hline 
+	\textbf{Attribut} & Fehlererkennung & Von Start bis Fertigstellung der Konvertierung  & Fehleranzahl  \\ \hline
+	& Hoch               & Anzahl als Integer & $= 0$  \\ \hline
+\end{tabularx}
+\egroup
