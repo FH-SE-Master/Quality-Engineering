@@ -4,17 +4,20 @@ In diesem Abschnitt werden die Produktqualität und die Qualität im Einsatz fü
 \newline
 \newline
 Als Beispiel für die Produktqualität werden Qualitätsmerkmale im Bezug auf die XML-Verarbeitung, die über die Anwendung \emph{clever\textbf{interface}} der Softwarelösung \emph{clevercure} erfolgen, definiert.
+\subsection{Produktqualität nach ISO 25010}
+\label{sec:qualtity-product-quality}
+Dieser Abschnitt beinhaltet die tabellarische Darstellung der gewählten Produktqualitätsmerkmale für die Anwendung \emph{clever\textbf{interface}} der Softwarelösung \emph{clever\textbf{cure}}. Anschließend an diese Tabelle sind Begriffserklärungen angeführt, di in der Aufstellung verwendet werden.
 \newline
 \newline
 \bgroup
 \def\arraystretch{1.5}%  1 is the default, change whatever you need
 \begin{tabularx}{\textwidth}{ p{70pt} | X | X | X }
-	\multicolumn{2}{c}{\textbf{Produktqualität nach ISO 25010}} \\ \hline
+	\hline
 	& \textbf{Beschreibung} & \textbf{Maß} & \textbf{Messvorgang} \\ \hline
 	& \textbf{Priorität} & \textbf{Maßeinheit} & \textbf{Schwellwert} \\ \hline
 	\textbf{Funktionalität} & \multicolumn{3}{p{300pt}}{XML-Datenimport eines standardisierten openTRANS-Dokuments} \\ \hline
 	\textbf{Merkmal} & \multicolumn{3}{X}{Leistungseffizienz} \\ \hline
-	\textbf{Definition} & \multicolumn{3}{p{380pt}}{Zeitdauer der Verarbeitung eines standardisierten XML-Dokuments} \\ \hline
+	\textbf{Definition} & \multicolumn{3}{p{380pt}}{Zeitdauer der Verarbeitung eines standardisierten openTRANS-Dokuments} \\ \hline
 	\textbf{Submerkmal} & \multicolumn{3}{X}{Zeitverhalten} \\ \hline 
 	\textbf{Attribut} & Verarbeitungsdauer & Transaktionsbeginn bis Transaktionsende & Zeitmessung  \\ \hline
 	               & Hoch               & Zeit in Minuten & $<= 5$ Mintuen  \\ 
@@ -26,33 +29,85 @@ Als Beispiel für die Produktqualität werden Qualitätsmerkmale im Bezug auf di
 	\textbf{Merkmal} & \multicolumn{3}{X}{Kompatibilität} \\ \hline
 	\textbf{Definition} & \multicolumn{3}{p{380pt}}{Konvertierung eines standardisierten openTrans-Dokuments in Version 1 zu einem openTRANS-Dokument in Version 2} \\ \hline
 	\textbf{Submerkmal} & \multicolumn{3}{X}{Interoperabilität} \\ \hline 
-	\textbf{Attribut} & Fehlererkennung & Von Start bis Fertigstellung der Konvertierung  & Fehleranzahl  \\ \hline
+	\textbf{Attribut} & Fehlererkennung & Vom Start bis Fertigstellung der Konvertierung  & Fehleranzahl  \\ \hline
 	& Hoch               & Anzahl als Integer & $= 0$  \\ \hline
 \end{tabularx}
 \egroup
 \ \newline
+\newline
+\textbf{Begriffserklärungen:}
+\begin{itemize}
+	\item Ein \emph{standardisiertes openTRANS-Dokument} ist ein vordefiniertes Dokument im openTRANs-Format im Bezug auf Inhalt und Umfang für deterministische und reproduzierbare Tests.
+	\item Der Zeitraum vom \emph{Transaktionsbeginn} bis \emph{Transaktionsende} ist der Zeitraum vom Start der Verarbeitung eines XML-Dokuments bis zum Ende Übermittlung des Verarbeitungsprotokolls.
+	\item Der Zeitraum \emph{Vom Start bis Fertigstellung der Konvertierung} ist der Zeitraum vom Beginn des Einlesens des XML-Dokuments bis zum Ende des Schreibens des konvertierten XML-Dokuments.
+\end{itemize}
 \newpage
+\subsection{Qualität im Einsatz nach ISO 25010}
+\label{sec:qualtity-quality-in-use}
+Dieser Abschnitt beinhaltet die tabellarische Darstellung der gewählten Qualität im Einsatz für die Anwendung \emph{clever\textbf{web}} der Softwarelösung \emph{clever\textbf{cure}}. Anschließend an diese Tabelle sind Begriffserklärungen angeführt, di in der Aufstellung verwendet werden.
+\newline
+\newline
 \bgroup
 \def\arraystretch{1.5}%  1 is the default, change whatever you need
 \begin{tabularx}{\textwidth}{ p{70pt} | X | X | X }
-	\multicolumn{2}{c}{\textbf{Qualität im Einsatz nach ISO 25010}} \\ \hline
+	\hline
 	& \textbf{Beschreibung} & \textbf{Maß} & \textbf{Messvorgang} \\ \hline
 	& \textbf{Priorität} & \textbf{Maßeinheit} & \textbf{Schwellwert} \\ \hline
-	\textbf{Funktionalität} & \multicolumn{3}{p{300pt}}{XML-Datenimport eines standardisierten openTRANS-Dokuments} \\ \hline
-	\textbf{Merkmal} & \multicolumn{3}{X}{Leistungseffizienz} \\ \hline
-	\textbf{Definition} & \multicolumn{3}{p{380pt}}{Zeitdauer der Verarbeitung eines standardisierten XML-Dokuments über die Anwendung \emph{clever\textbf{interface}}} \\ \hline
-	\textbf{Submerkmal} & \multicolumn{3}{X}{Zeitverhalten} \\ \hline 
-	\textbf{Attribut} & Verarbeitungsdauer & Transaktionsbeginn bis Transaktionsende & Zeitmessung  \\ \hline
-	& Hoch               & Zeit in Minuten & $<= 5$ Mintuen  \\ 
+	\textbf{Funktionalität} & \multicolumn{3}{p{300pt}}{Anzeige des  Lagerbestand eines Kunden für den Lieferanten für (VMI)} \\ \hline
+	\textbf{Merkmal} & \multicolumn{3}{X}{Zufriedenheit} \\ \hline
+	\textbf{Definition} & \multicolumn{3}{p{380pt}}{Brauchbarkeit der angezeigten Daten} \\ \hline
+	\textbf{Submerkmal} & \multicolumn{3}{X}{Vertrauen} \\ \hline 
+	\textbf{Attribut} & Aktualität & Lagerbestandsänderung bis Aktualisierung im \emph{clever\textbf{cure}} Datenbanksystem & Zeitmessung  \\ \hline
+	& Hoch               & Zeit in Minuten & $<= 3$ Mintuen  \\ 
 	\hline 
 	\hline 
 	& \textbf{Beschreibung} & \textbf{Maß} & \textbf{Messvorgang} \\ \hline
 	& \textbf{Priorität} & \textbf{Maßeinheit} & \textbf{Schwellwert} \\ \hline
-	\textbf{Funktionalität} & \multicolumn{3}{p{300pt}}{Konvertierung zwischen den beiden openTRANS Versionen 1 und 2} \\ \hline
-	\textbf{Merkmal} & \multicolumn{3}{X}{Kompatibilität} \\ \hline
-	\textbf{Definition} & \multicolumn{3}{p{380pt}}{Konvertierung eines standardisierten openTrans-Dokuments in Version 1 zu einem openTRANS-Dokument in Version 2} \\ \hline
-	\textbf{Submerkmal} & \multicolumn{3}{X}{Interoperabilität} \\ \hline 
-	\textbf{Attribut} & Fehlererkennung & Von Start bis Fertigstellung der Konvertierung  & Fehleranzahl  \\ \hline
-	& Hoch               & Anzahl als Integer & $= 0$  \\ \hline
+	\textbf{Funktionalität} & \multicolumn{3}{p{300pt}}{Anlegen eines neuen Mandanten (Werk eines Kunden) für einen Bestandskunden} \\ \hline
+	\textbf{Merkmal} & \multicolumn{3}{X}{Flexibilität} \\ \hline
+	\textbf{Definition} & \multicolumn{3}{p{380pt}}{Möglichkeit der Definition von Ressourcen, die für einen neuen Mandanten (Werk eines Bestandskunden) angelegt werden} \\ \hline
+	\textbf{Submerkmal} & \multicolumn{3}{X}{Flexibilität} \\ \hline 
+	\textbf{Attribut} & Anzahl der definierbaren Ressourcen & Anzahl  & Abzählen  \\ \hline
+	& Hoch               & Anzahl als Integer & $= 5$  \\ \hline
 \end{tabularx}
 \egroup
+\ \newline 
+\newline
+\textbf{Begriffserklärungen:}
+\begin{itemize}
+	\item \emph{Vendor Managed Inventory (VMI)} ist ein Begriff aus \emph{SRM}, wobei der Lieferant Zugang zum Lagerbestand des Kunden bekommt und in der Lage ist selbständig gemäß der Konfiguration des Kunden Artikel (meist A-Artikel) zu liefern, ohne das eine explizite Bestellung des Kunden erfolgen muss.
+	\item\emph{Mandanten} im \emph{clever\textbf{cure}} System repräsentieren ein Werk eines Kunden, wobei die Mandanten in Beziehung zu einander stehen, wobei ein Mandant die Konzernspitze darstellt.
+	\item\emph{Ressourcen} im \emph{clever\textbf{cure}} System sind z.B.
+	\begin{enumerate}
+		\item\emph{Storage(s)} im Dokumentenmanagementsystem,
+		\item\emph{EDI-Schnitstellen} oder
+		\item\emph{Formularvorlagen} für Stammdatenabfrage bei den Lieferanten oder
+		\item\emph{Systemeinstellungen}.
+	\end{enumerate}
+\end{itemize}
+\ \newpage
+\subsection{Qualitätssicherung nach ISO 250xx}
+\label{sec:qualtity-quality-ensurement}
+In diesem Abschnitt wird die Qualitätssicherung nach ISO 250xx diskutiert.
+\subsubsection{Leistungseffizienz}
+\label{sec:quality-qualtity-ensurement-openTrans}
+Im folgenden werden die Maßnahmen für die Qualitätssicherung der Anwendung \emph{clever\textbf{interface}} der Softwarelösung \emph{clever\textbf{cure}} angeführt.
+\newline
+\newline
+Die \emph{Service-Provider}, bei denen unsere \emph{Services} gehostet werden, müssen monatliche Reporte, die einen zeitlichen Verlauf der Ressourcenauslastung der Prozessoren und Speicherauslastung enthalten, zur Verfügung stellen, die von den IT-Verantwortlichen monatlich ausgewertet werden, um auf ein Ansteigen des Ressourcenbedarfs entweder durch die Optimierung der Softwarekomponente oder einem Aufstocken der Systemressourcen entgegen wirken zu können.
+\newline
+\newline
+Es werden die Schwellwerte $80\%$ Prozessorauslastung über einen Zeitraum von 30 Minuten und $75\%$ Auslastung des Arbeitsspeichers festgelegt, bei denen die \emph{Service-Provider} innerhalb von 5 Minuten eine Alarmmeldung an angegebene Kontaktadressen in Form von E-Mail verschicken müssen. 
+\newline
+\newline
+Den einzelnen Kunden und Lieferanten werden nur begrenzte Systemressourcen zur Verfügung gestellt, wobei eine Überbuchung der gesamten Systemressourcen von $30\%$ zulässig ist. 
+\newline
+\newline
+Die Kunden müssen monatliche Reports ihrer genutzten Systemressourcen bekommen, wobei im Falle einer ungewöhnlichen hohen Nutzung Kontakt mit den Verantwortlichen des Kunden Kontakt aufgenommen werden muss, um festzustellen warum der Kunde einen erhöhten Ressourcenverbrauch aufweist. Im Falle einer ineffizienten Nutzung muss dem Kunden Hilfestellung angeboten werden um den Ressourcenverbrauch wieder auf ein normales Niveau zu bringen. Im Falle eines erhöhten Datenaufkommens muss der Kunde darauf hingewiesen werden, das ein erhöhen seiner Systemressourcen von Nöten sein wird um die Effizienz des Datenimport und -export zu gewährleisten zu können.  
+
+\subsubsection{Kompatibilität}
+\subsubsection{Zufriedenheit}
+\subsubsection{Flexibilität}
+
+
+
