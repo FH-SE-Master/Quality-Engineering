@@ -1,50 +1,53 @@
 \section{Qualität}
 \label{sec:quality}
-In diesem Abschnitt werden die Produktqualität und die Qualität im Einsatz für die Internationalisierung diskutiert.
+In diesem Abschnitt werden die Produktqualität und die Qualität im Einsatz für die Internationalisierung diskutiert, wobei unter Internationalisierung das Einführen des Produkts in einen anderen Markt verstanden wird.
 \newline
 \newline
 Als Beispiel für die Produktqualität werden Qualitätsmerkmale im Bezug auf die XML-Verarbeitung, die über die Anwendung \emph{clever\textbf{interface}} der Softwarelösung \emph{clevercure} erfolgen, definiert.
 \subsection{Produktqualität nach ISO 25010}
 \label{sec:qualtity-product-quality}
-Dieser Abschnitt beinhaltet die tabellarische Darstellung der gewählten Produktqualitätsmerkmale für die Anwendung \emph{clever\textbf{interface}} der Softwarelösung \emph{clever\textbf{cure}}. Anschließend an diese Tabelle sind Begriffserklärungen angeführt, di in der Aufstellung verwendet werden.
-\newline
-\newline
+Dieser Abschnitt beinhaltet die tabellarische Darstellung der gewählten Merkmale Produktqualität.
 \bgroup
 \def\arraystretch{1.5}%  1 is the default, change whatever you need
 \begin{tabularx}{\textwidth}{ p{70pt} | X | X | X }
 	\hline
 	& \textbf{Beschreibung} & \textbf{Maß} & \textbf{Messvorgang} \\ \hline
 	& \textbf{Priorität} & \textbf{Maßeinheit} & \textbf{Schwellwert} \\ \hline
-	\textbf{Funktionalität} & \multicolumn{3}{p{300pt}}{XML-Datenimport eines standardisierten openTRANS-Dokuments} \\ \hline
+	\textbf{Funktionalität} & \multicolumn{3}{p{300pt}}{Anbinden des \emph{ERP}-Systems des Kunden an das \emph{clever\textbf{cure}}-System} \\ \hline
 	\textbf{Merkmal} & \multicolumn{3}{X}{Leistungseffizienz} \\ \hline
-	\textbf{Definition} & \multicolumn{3}{p{380pt}}{Zeitdauer der Verarbeitung eines standardisierten openTRANS-Dokuments} \\ \hline
+	\textbf{Definition} & \multicolumn{3}{p{380pt}}{Einrichten des \emph{SAP}-Plugins beim Kunden} \\ \hline
 	\textbf{Submerkmal} & \multicolumn{3}{X}{Zeitverhalten} \\ \hline 
-	\textbf{Attribut} & Verarbeitungsdauer & Transaktionsbeginn bis Transaktionsende & Zeitmessung  \\ \hline
-	               & Hoch               & Zeit in Minuten & $<= 5$ Mintuen  \\ 
+	\textbf{Attribut} & Einrichtungsdauer & Ankunft beim Kunden bis Fertigstellung & Zeitmessung  \\ \hline
+	               & Sehr Hoch               & Zeit in Minuten & $<= 18$  \\ 
     \hline 
     \hline 
 	& \textbf{Beschreibung} & \textbf{Maß} & \textbf{Messvorgang} \\ \hline
 	& \textbf{Priorität} & \textbf{Maßeinheit} & \textbf{Schwellwert} \\ \hline
-	\textbf{Funktionalität} & \multicolumn{3}{p{300pt}}{Konvertierung zwischen den beiden openTRANS Versionen 1 und 2} \\ \hline
-	\textbf{Merkmal} & \multicolumn{3}{X}{Kompatibilität} \\ \hline
-	\textbf{Definition} & \multicolumn{3}{p{380pt}}{Konvertierung eines standardisierten openTrans-Dokuments in Version 1 zu einem openTRANS-Dokument in Version 2} \\ \hline
-	\textbf{Submerkmal} & \multicolumn{3}{X}{Interoperabilität} \\ \hline 
-	\textbf{Attribut} & Fehlererkennung & Vom Start bis Fertigstellung der Konvertierung  & Fehleranzahl  \\ \hline
-	& Hoch               & Anzahl als Integer & $= 0$  \\ \hline
+	\textbf{Funktionalität} & \multicolumn{3}{p{300pt}}{Schulung der Key-User beim Kunden} \\ \hline
+	\textbf{Merkmal} & \multicolumn{3}{X}{Benutzerfreundlichkeit} \\ \hline
+	\textbf{Definition} & \multicolumn{3}{p{380pt}}{Schulung über die Kernfunktionalität von \emph{clever\textbf{cure}}} \\ \hline
+	\textbf{Submerkmal} & \multicolumn{3}{X}{Erlernbarkeit} \\ \hline 
+	\textbf{Attribut} & Testergebnisse & Testbewertung  & Testauswertung  \\ \hline
+	& Hoch               & Prozent & $>= 80$  \\ \hline
 \end{tabularx}
 \egroup
 \ \newline
 \newline
 \textbf{Begriffserklärungen:}
 \begin{itemize}
-	\item Ein \emph{standardisiertes openTRANS-Dokument} ist ein vordefiniertes Dokument im openTRANs-Format im Bezug auf Inhalt und Umfang für deterministische und reproduzierbare Tests.
-	\item Der Zeitraum vom \emph{Transaktionsbeginn} bis \emph{Transaktionsende} ist der Zeitraum vom Start der Verarbeitung eines XML-Dokuments bis zum Ende Übermittlung des Verarbeitungsprotokolls.
-	\item Der Zeitraum \emph{Vom Start bis Fertigstellung der Konvertierung} ist der Zeitraum vom Beginn des Einlesens des XML-Dokuments bis zum Ende des Schreibens des konvertierten XML-Dokuments.
+	\item Das \emph{SAP-Plugin} wurde von einem Partner entwickeltet und integriert die Import- und Exportkomponenten von \emph{clever\textbf{interface}} in das \emph{ERP}-System des Kunden.
+	\item Mit der \emph{Schulung über die  Kernfunktionalität von clever\textbf{cure}} sind folgende Bereiche mit inbegriffen.
+	\begin{itemize}
+		\item Die Lieferantenverwaltung,
+		\item die Einkäuferverwaltung,
+		\item das Vorlagenmanagement und
+		\item das Workflowmanagement.
+	\end{itemize}
 \end{itemize}
 \newpage
 \subsection{Qualität im Einsatz nach ISO 25010}
 \label{sec:qualtity-quality-in-use}
-Dieser Abschnitt beinhaltet die tabellarische Darstellung der gewählten Qualität im Einsatz für die Anwendung \emph{clever\textbf{web}} der Softwarelösung \emph{clever\textbf{cure}}. Anschließend an diese Tabelle sind Begriffserklärungen angeführt, di in der Aufstellung verwendet werden.
+Dieser Abschnitt beinhaltet die tabellarische Darstellung der gewählten Merkmale Qualität im Einsatz.
 \newline
 \newline
 \bgroup
@@ -53,37 +56,29 @@ Dieser Abschnitt beinhaltet die tabellarische Darstellung der gewählten Qualit�
 	\hline
 	& \textbf{Beschreibung} & \textbf{Maß} & \textbf{Messvorgang} \\ \hline
 	& \textbf{Priorität} & \textbf{Maßeinheit} & \textbf{Schwellwert} \\ \hline
-	\textbf{Funktionalität} & \multicolumn{3}{p{300pt}}{Anzeige des  Lagerbestand eines Kunden für den Lieferanten für (VMI)} \\ \hline
+	\textbf{Funktionalität} & \multicolumn{3}{p{300pt}}{Anlegen eines Storage für einen Kunden für das Dokumentenmanagementsystems.} \\ \hline
 	\textbf{Merkmal} & \multicolumn{3}{X}{Zufriedenheit} \\ \hline
-	\textbf{Definition} & \multicolumn{3}{p{380pt}}{Brauchbarkeit der angezeigten Daten} \\ \hline
+	\textbf{Definition} & \multicolumn{3}{p{380pt}}{Anlegen eines Storage im Mutterland des Kunden (Z.B. Amerika)} \\ \hline
 	\textbf{Submerkmal} & \multicolumn{3}{X}{Vertrauen} \\ \hline 
-	\textbf{Attribut} & Aktualität & Lagerbestandsänderung bis Aktualisierung im \emph{clever\textbf{cure}} Datenbanksystem & Zeitmessung  \\ \hline
-	& Hoch               & Zeit in Minuten & $<= 3$ Mintuen  \\ 
+	\textbf{Attribut} & Anlagedauer & Zeitraum & Zeitmessung \\ \hline
+	& Hoch               & Zeit in Stunden & $<= 12$  \\ 
 	\hline 
 	\hline 
 	& \textbf{Beschreibung} & \textbf{Maß} & \textbf{Messvorgang} \\ \hline
 	& \textbf{Priorität} & \textbf{Maßeinheit} & \textbf{Schwellwert} \\ \hline
-	\textbf{Funktionalität} & \multicolumn{3}{p{300pt}}{Anlegen eines neuen Mandanten (Werk eines Kunden) für einen Bestandskunden} \\ \hline
-	\textbf{Merkmal} & \multicolumn{3}{X}{Flexibilität} \\ \hline
-	\textbf{Definition} & \multicolumn{3}{p{380pt}}{Möglichkeit der Definition von Ressourcen, die für einen neuen Mandanten (Werk eines Bestandskunden) angelegt werden} \\ \hline
-	\textbf{Submerkmal} & \multicolumn{3}{X}{Flexibilität} \\ \hline 
-	\textbf{Attribut} & Anzahl der definierbaren Ressourcen & Anzahl  & Abzählen  \\ \hline
-	& Hoch               & Anzahl als Integer & $= 5$  \\ \hline
+	\textbf{Funktionalität} & \multicolumn{3}{p{300pt}}{Backup der Kundenstorages} \\ \hline
+	\textbf{Merkmal} & \multicolumn{3}{X}{Risikofreiheit} \\ \hline
+	\textbf{Definition} & \multicolumn{3}{p{380pt}}{Periodisches inkrementelles Backup des Kundenstorages} \\ \hline
+	\textbf{Submerkmal} & \multicolumn{3}{X}{Minderung von Wirtschaftsrisiken} \\ \hline 
+	\textbf{Attribut} & Dauer des Backups  & Zeitraum  & Zeitmessung  \\ \hline
+	& Sehr Hoch               & Zeit in Minuten & $<= 15$  \\ \hline
 \end{tabularx}
 \egroup
 \ \newline 
 \newline
 \textbf{Begriffserklärungen:}
 \begin{itemize}
-	\item \emph{Vendor Managed Inventory (VMI)} ist ein Begriff aus \emph{SRM}, wobei der Lieferant Zugang zum Lagerbestand des Kunden bekommt und in der Lage ist selbständig gemäß der Konfiguration des Kunden Artikel (meist A-Artikel) zu liefern, ohne das eine explizite Bestellung des Kunden erfolgen muss.
-	\item\emph{Mandanten} im \emph{clever\textbf{cure}} System repräsentieren ein Werk eines Kunden, wobei die Mandanten in Beziehung zu einander stehen, wobei ein Mandant die Konzernspitze darstellt.
-	\item\emph{Ressourcen} im \emph{clever\textbf{cure}} System sind z.B.
-	\begin{enumerate}
-		\item\emph{Storage(s)} im Dokumentenmanagementsystem,
-		\item\emph{EDI-Schnitstellen} oder
-		\item\emph{Formularvorlagen} für Stammdatenabfrage bei den Lieferanten oder
-		\item\emph{Systemeinstellungen}.
-	\end{enumerate}
+	\item Ein \emph{Storage} ist ein persistenter Speicherbereich eines Kunden, der alle anfallenden Dokumente von \emph{clever\textbf{cure}} wie Bestellbestätigung, Gutschrift usw. enthält.
 \end{itemize}
 \ \newpage
 \subsection{Qualitätssicherung nach ISO 250xx}
