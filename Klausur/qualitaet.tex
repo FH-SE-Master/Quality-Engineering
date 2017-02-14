@@ -4,7 +4,7 @@ In diesem Abschnitt werden die Produktqualität und die Qualität im Einsatz fü
 \newline
 \newline
 Als Beispiel für die Produktqualität werden Qualitätsmerkmale im Bezug auf die XML-Verarbeitung, die über die Anwendung \emph{clever\textbf{interface}} der Softwarelösung \emph{clevercure} erfolgen, definiert.
-\subsection{Produktqualität nach ISO 25010}
+\subsection{Produktqualität}
 \label{sec:qualtity-product-quality}
 Dieser Abschnitt beinhaltet die tabellarische Darstellung der gewählten Merkmale Produktqualität.
 \newline
@@ -16,19 +16,19 @@ Dieser Abschnitt beinhaltet die tabellarische Darstellung der gewählten Merkmal
 	& \textbf{Priorität} & \textbf{Maßeinheit} & \textbf{Schwellwert} \\ \hline
 	\textbf{Funktionalität} & \multicolumn{3}{p{300pt}}{Anbinden des \emph{ERP}-Systems des Kunden an das \emph{clever\textbf{cure}}-System} \\ \hline
 	\textbf{Merkmal} & \multicolumn{3}{X}{Leistungseffizienz} \\ \hline
-	\textbf{Definition} & \multicolumn{3}{p{380pt}}{Einrichten des \emph{SAP}-Plugins beim Kunden} \\ \hline
+	\textbf{Definition} & \multicolumn{3}{p{380pt}}{Übersetzung der Protokollvorlagen} \\ \hline
 	\textbf{Submerkmal} & \multicolumn{3}{X}{Zeitverhalten} \\ \hline 
-	\textbf{Attribut} & Einrichtungsdauer & Ankunft beim Kunden bis Fertigstellung & Zeitmessung  \\ \hline
-	               & Sehr Hoch               & Zeit in Minuten & $<= 18$  \\ 
+	\textbf{Attribut} & Übersetzungsdauer & Übermittlung der deutschen Version an Übersetzer bis dessen Rücksendung & Zeitmessung  \\ \hline
+	               & Sehr Hoch               & Zeit in Tagen & $<= 14$  \\ 
     \hline 
     \hline 
 	& \textbf{Beschreibung} & \textbf{Maß} & \textbf{Messvorgang} \\ \hline
 	& \textbf{Priorität} & \textbf{Maßeinheit} & \textbf{Schwellwert} \\ \hline
 	\textbf{Funktionalität} & \multicolumn{3}{p{300pt}}{Schulung der Key-User beim Kunden} \\ \hline
 	\textbf{Merkmal} & \multicolumn{3}{X}{Benutzerfreundlichkeit} \\ \hline
-	\textbf{Definition} & \multicolumn{3}{p{380pt}}{Schulung über die Kernfunktionalität von \emph{clever\textbf{cure}}} \\ \hline
+	\textbf{Definition} & \multicolumn{3}{p{380pt}}{Übersetzte Schulungsvideos für Key-User} \\ \hline
 	\textbf{Submerkmal} & \multicolumn{3}{X}{Erlernbarkeit} \\ \hline 
-	\textbf{Attribut} & Testergebnisse & Testbewertung  & Testauswertung  \\ \hline
+	\textbf{Attribut} & Testergebnisse & Testergebnisse  & Testauswertung  \\ \hline
 	& Hoch               & Prozent & $>= 80$  \\ \hline
 \end{tabularx}
 \egroup
@@ -36,17 +36,11 @@ Dieser Abschnitt beinhaltet die tabellarische Darstellung der gewählten Merkmal
 \newline
 \textbf{Begriffserklärungen:}
 \begin{itemize}
-	\item Das \emph{SAP-Plugin} wurde von einem Partner entwickeltet und integriert die Import- und Exportkomponenten von \emph{clever\textbf{interface}} in das \emph{ERP}-System des Kunden.
-	\item Mit der \emph{Schulung über die  Kernfunktionalität von clever\textbf{cure}} sind folgende Bereiche mit inbegriffen.
-	\begin{itemize}
-		\item Die Lieferantenverwaltung,
-		\item die Einkäuferverwaltung,
-		\item das Vorlagenmanagement und
-		\item das Workflowmanagement.
-	\end{itemize}
+	\item Beim Anbinden eines \emph{ERP}-Systems des Kunden werden Protokolle verwendet, welche die Nötigen Arbeiten definieren und deren Resultate und aktuellen Status beinhalten. 
+	\item Es werden online Schulungsvideos für die Key-User angeboten, welche die Funktionalität, Einstellungsmöglichkeiten und Best Practise von mit dem Umgang mit \emph{clever\textbf{cure}} erklären.
 \end{itemize}
 \newpage
-\subsection{Qualität im Einsatz nach ISO 25010}
+\subsection{Qualität im Einsatz}
 \label{sec:qualtity-quality-in-use}
 Dieser Abschnitt beinhaltet die tabellarische Darstellung der gewählten Merkmale Qualität im Einsatz.
 \newline
@@ -59,51 +53,29 @@ Dieser Abschnitt beinhaltet die tabellarische Darstellung der gewählten Merkmal
 	& \textbf{Priorität} & \textbf{Maßeinheit} & \textbf{Schwellwert} \\ \hline
 	\textbf{Funktionalität} & \multicolumn{3}{p{300pt}}{Anlegen eines Storage für einen Kunden für das Dokumentenmanagementsystems.} \\ \hline
 	\textbf{Merkmal} & \multicolumn{3}{X}{Zufriedenheit} \\ \hline
-	\textbf{Definition} & \multicolumn{3}{p{380pt}}{Anlegen eines Storage im Mutterland des Kunden (Z.B. Amerika)} \\ \hline
+	\textbf{Definition} & \multicolumn{3}{p{380pt}}{Anlegen eines Storage über einen webbasierten Wizard.} \\ \hline
 	\textbf{Submerkmal} & \multicolumn{3}{X}{Vertrauen} \\ \hline 
 	\textbf{Attribut} & Anlagedauer & Zeitraum & Zeitmessung \\ \hline
-	& Hoch               & Zeit in Stunden & $<= 12$  \\ 
+	& Hoch               & Zeit in Minuten & $<= 10$  \\ 
 	\hline 
 	\hline 
 	& \textbf{Beschreibung} & \textbf{Maß} & \textbf{Messvorgang} \\ \hline
 	& \textbf{Priorität} & \textbf{Maßeinheit} & \textbf{Schwellwert} \\ \hline
-	\textbf{Funktionalität} & \multicolumn{3}{p{300pt}}{Backup der Kundenstorages} \\ \hline
+	\textbf{Funktionalität} & \multicolumn{3}{p{300pt}}{Reporte für den Administrator über ausgeführte administrative Aktionen} \\ \hline
 	\textbf{Merkmal} & \multicolumn{3}{X}{Risikofreiheit} \\ \hline
-	\textbf{Definition} & \multicolumn{3}{p{380pt}}{Periodisches inkrementelles Backup des Kundenstorages} \\ \hline
-	\textbf{Submerkmal} & \multicolumn{3}{X}{Minderung von Wirtschaftsrisiken} \\ \hline 
-	\textbf{Attribut} & Dauer des Backups  & Zeitraum  & Zeitmessung  \\ \hline
-	& Sehr Hoch               & Zeit in Minuten & $<= 15$  \\ \hline
+	\textbf{Definition} & \multicolumn{3}{p{380pt}}{Zeitangabe in der Zeitzone des Administrators mit Angabe der Zeitzone in der die Aktion ausgeführt wurde} \\ \hline
+	\textbf{Submerkmal} & \multicolumn{3}{p{380pt}}{Minderung von Wirtschaftsrisiken} \\ \hline 
+	\textbf{Attribut} & Korrektheit der Umrechnung  & Wahrheitswert  & Zeitumrechnung  \\ \hline
+	& Sehr Hoch               & Korrekt oder Falsch & Korrekt \\ \hline
 \end{tabularx}
 \egroup
 \ \newline 
 \newline
 \textbf{Begriffserklärungen:}
 \begin{itemize}
-	\item Ein \emph{Storage} ist ein persistenter Speicherbereich eines Kunden, der alle anfallenden Dokumente von \emph{clever\textbf{cure}} wie Bestellbestätigung, Gutschrift usw. enthält.
+	\item Ein \emph{Storage} wird von einem Kunden über einen webbasierten \emph{Wizard} erstellt, der den Kunden durch die nötigen Einstellungen führt inklusive Erklärungen,  verlinkter Dokumentation und mit der Möglichkeit eines direkten Kontakt zum \emph{Support}.
+	\item Die Administrator erhalten je nach Einstellung aber mindestens einmal pro Woche Reporte über durchgeführte administrative Tätigkeiten am System.
 \end{itemize}
-\ \newpage
-\subsection{Qualitätssicherung nach ISO 250xx}
-\label{sec:qualtity-quality-ensurement}
-In diesem Abschnitt wird die Qualitätssicherung nach ISO 250xx diskutiert.
-\subsubsection{Leistungseffizienz}
-\label{sec:quality-qualtity-ensurement-openTrans}
-Im folgenden werden die Maßnahmen für die Qualitätssicherung der Anwendung \emph{clever\textbf{interface}} der Softwarelösung \emph{clever\textbf{cure}} angeführt.
-\newline
-\newline
-Die \emph{Service-Provider}, bei denen unsere \emph{Services} gehostet werden, müssen monatliche Reporte, die einen zeitlichen Verlauf der Ressourcenauslastung der Prozessoren und Speicherauslastung enthalten, zur Verfügung stellen, die von den IT-Verantwortlichen monatlich ausgewertet werden, um auf ein Ansteigen des Ressourcenbedarfs entweder durch die Optimierung der Softwarekomponente oder einem Aufstocken der Systemressourcen entgegen wirken zu können.
-\newline
-\newline
-Es werden die Schwellwerte $80\%$ Prozessorauslastung über einen Zeitraum von 30 Minuten und $75\%$ Auslastung des Arbeitsspeichers festgelegt, bei denen die \emph{Service-Provider} innerhalb von 5 Minuten eine Alarmmeldung an angegebene Kontaktadressen in Form von E-Mail verschicken müssen. 
-\newline
-\newline
-Den einzelnen Kunden und Lieferanten werden nur begrenzte Systemressourcen zur Verfügung gestellt, wobei eine Überbuchung der gesamten Systemressourcen von $30\%$ zulässig ist. 
-\newline
-\newline
-Die Kunden müssen monatliche Reports ihrer genutzten Systemressourcen bekommen, wobei im Falle einer ungewöhnlichen hohen Nutzung Kontakt mit den Verantwortlichen des Kunden Kontakt aufgenommen werden muss, um festzustellen warum der Kunde einen erhöhten Ressourcenverbrauch aufweist. Im Falle einer ineffizienten Nutzung muss dem Kunden Hilfestellung angeboten werden um den Ressourcenverbrauch wieder auf ein normales Niveau zu bringen. Im Falle eines erhöhten Datenaufkommens muss der Kunde darauf hingewiesen werden, das ein erhöhen seiner Systemressourcen von Nöten sein wird um die Effizienz des Datenimport und -export zu gewährleisten zu können.  
-
-\subsubsection{Kompatibilität}
-\subsubsection{Zufriedenheit}
-\subsubsection{Flexibilität}
 
 
 
