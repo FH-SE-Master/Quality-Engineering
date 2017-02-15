@@ -1,3 +1,119 @@
 \section{ISO 9000 - CMMI}
 \label{sec:cmmi}
-TODO
+\subsection{Beschreibung Prozessschritte}
+\textbf{1. Internes Audit:}
+\newline
+Auch wenn das Unternehmen ISO 9001 zertifiziert ist, heißt dies nicht, dass das Unternehmen alle Bereiche von ISO 9001 umgesetzt hat und auch nicht dass es nach diesem Standard lebt. Daher muss zuerst mittels einem Audit festgestellt werden was von ISO 9001 im Unternehmen auch wirklich umgesetzt wurde und gelebt wird, da ansonsten die Voraussetzungen für eine Einführung von \emph{CMMI} nicht gegeben sind. ISO 9001 und \emph{CMMI} sind zwar ähnlich und verfolgen dieselben Ziele, jedoch gibt es Unterschiede, die es zu ermitteln gilt. Der Hauptunterschied zwischen ISO 9001 und \emph{CMMI} ist, dass ISO 9001 ein Audit Standard ist und \emph{CMMI} ein Prozessmodell. Der ISO 9001 Standard muss \qq{nur} während des Audits unterstützt, \emph{CMMI} aber muss gelebt werden, wie bei einem Prozessmodell üblich.
+\newline
+\newline
+Die nachfolgende Tabelle stellt die ISO 9001 Prozessbereiche dem aktuellen Status gegenüber, und wird als Hilfsmittel verwendet, um die aktuelle Abdeckung des ISO 9001 Standards im Unternehmen zu unterstützen.
+\bgroup
+\def\arraystretch{1.5}%  1 is the default, change whatever you need
+\begin{tabularx}{\textwidth}{ c | c | c }
+	\hline
+	\textbf{\emph{Key process area}} & 
+	\textbf{\emph{not satisfied}} & 
+	\textbf{\emph{satisfied}} 
+	\\ \hline
+	Requirements Management &
+	X & 
+	\\ \hline
+	Software Project Planning &
+	& X 
+	\\ \hline
+	Software Project Tracking \& Oversight &
+	X & 
+	\\ \hline
+	... & & 
+	\\ \hline
+\end{tabularx}
+\egroup
+\ \newline
+Auch wenn der Standard ISO 9001 vollständig umgesetzt wurde, heißt das nicht zwangsweise dass eine \emph{CMMI} Zertifizierung möglich ist. Es werden bei einer vollständigen Umsetzung von ISO 9001 zwar die meisten Teile vom \emph{Level} 2 der \emph{CMMI}-Prozessbereiche unterstützt, sowie werden die meisten \emph{Level} 2 \emph{Goals} und einige der \emph{Level} 3 \emph{Goals} abgedeckt, jedoch gibt es Bereiche, die von ISO 9001 nicht abgedeckt werden.
+\newline
+\newline
+\textbf{2. Feststellung der Unterschiede von \emph{ISO} zu \emph{CMMI}}
+\newline
+Nachdem festgestellt wurde was von ISO 9001 tatsächlich umgesetzt und gelebt wird müssen die korrespondierenden \emph{CMMI}-Prozessbereiche, sowie dessen \emph{Goals}, die bereits abgedeckt sind, festgestellt werden. Dadurch zeigt sich inwieweit  das Unternehmen durch die ISO 9001 Zertifizierung bereits \emph{CMMI} abdeckt. 
+\newline
+\newline
+\textbf{3. Nicht abgedeckte Prozesse an \emph{CMMI} anpassen}
+\newline
+Nachdem das Unternehmen durch das Audit festgestellt hat, was von ISO 9001 umgesetzt wurde und gelebt wird und nachdem festgestellt wurde inwieweit \emph{CMMI} bereits abgedeckt wird, müssen Maßnahmen für die nicht abgedeckten Prozesse definiert werden, damit diese an \emph{CMMI} angepasst werden können. Dafür müssen die einzelnen korrespondierenden Prozessbereiche und dessen \emph{Goals (Spevifc and Generic Goals)} einzeln abgearbeitet werden. 
+\newline
+\newline
+Nachdem das Unternehmen jetzt weiß inwieweit \emph{CMMI} abgedeckt wird, können die Fähigkeitniveaus \emph{(Capability Level)} und der Reifegrad \emph{(Maturity Level)} des Unternehmens festgestellt werden.  
+\newpage
+
+\subsection{Gewählter \emph{CMMI}-Prozessbereich \emph{MA}}
+Es wurde der \emph{CMMI}-Prozessbereich \emph{Measurement and Analysis (MA)} ausgewählt, da das Unternehmen aufgrund der ISO 9001 Zertifizierung, der Synergien der beiden Standards und der durchgeführten Analyse bereits fast alle \emph{CMMI}-Prozessbereiche des \emph{CMMI Capability Level 2} bis auf \emph{Measurement and Analysis (MA)} und \emph{Supplier Agreement Management (SAM)} abdeckt. Diese beiden \emph{CMMI}-Prozessbereiche werden nicht von ISO 9001 abgedeckt und werden daher vom Unternehmen noch nicht unterstützt. Um den \emph{CMMI Capability Level 2} vollständig zu unterstützen, wird einer der beiden \emph{CMMI}-Prozessbereich ausgewählt, damit das Unternehmen der vollständigen Unterstützung des \emph{CMMI Capability Level 2} näher kommt.
+\subsubsection{SG 1 Align Measurement and Analysis Activities}
+Für das Dokumentenmanagementsystem der Softwarelösung  \emph{clever\textbf{cure}} werden folgende \emph{Measurement objectives}, Maße, Datensammlung, Analyse und Reporte definiert.
+\bgroup
+\def\arraystretch{1.5}%  1 is the default, change whatever you need
+\begin{tabularx}{\textwidth}{ X | p{50pt} | X | X | X }
+	\hline
+	\textbf{Ziel} & 
+	\textbf{Maß} & 
+	\textbf{Datensammlung} &
+	\textbf{Analyse} &
+	\textbf{Reporte}
+	\\ \hline
+	
+	Überlastung des Dokumentenmanagementsystems vermeiden &
+	GB in \% &
+	Monatlicher Kundenreport&
+	$x>=70\%$ 
+	\newline\newline Meldung an Administrator und Kunden.
+	\newline\newline Angebotslegung zu Vergrößerung des Speichers. 
+	\newline\newline Anraten zum Archivieren von alten Daten beim Kunden&
+	Monatsbericht an Kunden
+	\newline\newline Ablage des Reports im \emph{CRM}
+	\\ \hline
+	
+	Überlastung der Webanwendung vermeiden  &
+	Anzahl &
+	Wöchentlicher Systemreport&
+	$x>=1000$ 
+	\newline\newline Meldung an Administrator
+	\newline\newline Horizontale Skalierung der Webanwendung &
+	Wöchentliche Administratoren Meetings
+	\newline\newline Ablage im Dokumentenmanagementsystem
+	\newline\newline Jahresmeeting der Administratoren
+	\\ \hline
+\end{tabularx}
+\begin{tabularx}{\textwidth}{ X | X }
+	\hline
+	\textbf{Ziel} & 
+	\textbf{Beteiligte}
+	\\ \hline
+	
+	Überlastung des Dokumentenmanagementsystems vermeiden &
+	Systemadministrator des Dokumentenmanagements 
+	\newline 
+	IT-Verantwortlicher des Kunden
+	\\ \hline
+	
+	Überlastung der Webanwendung vermeiden &
+	Systemadministrator der Webanwendung \newline
+	Verantwortlicher beim \emph{Service-Provider}
+	\\ \hline
+\end{tabularx}
+\egroup
+\subsubsection{SG 2 Provide Measurement Results}
+Durch die Messungen zur Sicherstellung des Ziels \qq{\emph{Überlastung des Dokumentenmanagementsystems vermeiden}} soll sichergestellt werden, dass dem Kunden 
+\begin{itemize}
+	\item keine Ausfälle durch eine Speicherauslastung am Dokumentenmanagement entstehen,
+	\item dass der Kunden frühzeitig informiert wird wenn es mehr Speicher benötigt und
+	\item dass der Kunde frühzeitig darauf hingewiesen wird alte Dokumente anderweitig zu sichern und damit das Dokumentenmanagementsystem zu entlasten.
+\end{itemize}
+\ \newline
+Durch die Messungen zur Sicherstellung des Ziels \qq{\emph{Überlastung der Webanwendung vermeiden}} soll gewährleistet werden, dass die Webanwendung nicht durch Überlastung ausfällt oder dessen Performance einbricht. Dies ist wichtig da mehrere Kunden mit derselben Webanwendung arbeiten und bei einem Ausfall  alle Kunden betroffen sind.
+
+\subsubsection{GG 1 Achieve Specific Goals}
+Für die periodischen Messungen sollen bei den \emph{Service-Providern} Messinstrumente implementiert werden, welche die erforderlichen Messwerte periodisch erfassen, sammeln und in periodischen Abständen an das Unternehmen übermitteln. Die Beteiligten Personen sollen in der Analyse der Messergebnisse geschult werden sowie Prozesse definiert werden, welche die Vorgegeben Aktionen abbilden. Die \emph{QM}-Abteilung soll in monatlichen Abständen überprüfen, ob die Prozesse eingehalten werden, die Reporte akkurat sind und die Reporte auch in den vorgegebenen Intervallen begutachtet werden.
+
+\subsubsection{GG 2 Institutionalize a Managed Process, Generic Practices}
+Die Unternehmensvorgabe ist die unbedingte Einhaltung aller periodischen Messungen und deren Auswertung durch die verantwortlichen Personen. Die Abteilungsverantwortlichen sind dazu verpflichtet sicher zu stellen, dass die Messungen immer vorgenommen werden müssen, sowie das die Reporte begutachtet und korrekt auf die Ergebnisse reagiert wird.
+\newline
+\newline
